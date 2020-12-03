@@ -31,6 +31,12 @@ class MyDocument extends Document {
                     <meta property="twitter:title" content={title} />
                     <meta property="twitter:description" content={description} />
                     <meta property="twitter:image" content={imageUrl} />
+
+                    <link rel="preconnect" href="https://fonts.gstatic.com" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+                        rel="stylesheet"
+                    />
                 </Head>
 
                 <body>

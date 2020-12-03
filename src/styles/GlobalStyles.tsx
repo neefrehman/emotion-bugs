@@ -5,12 +5,12 @@ export const GlobalStyles = () => {
     const { colors } = useTheme();
 
     const globalStyles = css`
-        @font-face {
+        /* @font-face {
             font-family: "Fleuron";
             font-weight: normal;
             font-display: block;
             src: url("/static/fonts/fleuronregular.woff2");
-        }
+        } */
 
         * {
             margin: 0;
@@ -21,7 +21,8 @@ export const GlobalStyles = () => {
         }
 
         body {
-            font-family: "Fleuron", helvetica neue, helvetica, arial, sans-serif;
+            /* font-family: "Fleuron", helvetica neue, helvetica, arial, sans-serif; */
+            font-family: "Chonburi", cursive;
             font-size: 16px;
             line-height: 1.2;
             color: ${colors.white};
