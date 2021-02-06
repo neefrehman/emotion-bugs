@@ -1,27 +1,14 @@
+// eslint-ignore
+
 module.exports = {
+    target: "experimental-serverless-trace",
+    i18n: {
+        locales: ["en", "de"],
+        defaultLocale: "en",
+    },
     webpack(config /* , options */) {
         config.module.rules.push({
-            test: /\.(glsl|vs|fs|vert|frag)$/,
-            exclude: /node_modules/,
-            use: [
-                "raw-loader",
-                {
-                    loader: "glslify-loader",
-                    options: {
-                        transform: [
-                            [
-                                // Transfroms must also go into package.json for when babel is handling inline glsl
-                                "glslify-hex",
-                                { "option-1": true, "option-2": 42 },
-                            ],
-                        ],
-                    },
-                },
-            ],
-        });
-        config.module.rules.push({
-            test: /\.(obj|gltf|mtl)$/,
-            exclude: /node_modules/,
+            test: [/\.obj$/, /\.jpe?g$/],
             use: ["url-loader"],
         });
         return config;

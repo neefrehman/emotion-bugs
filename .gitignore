@@ -3,12 +3,12 @@
 /.pnp
 .pnp.js
 
-# builds
-.next/
+# next.js
+/.next/
+/out/
 .linaria-cache/
 .netlify/
-out/
-build
+/build
 
 # misc
 .DS_Store
@@ -22,3 +22,7 @@ npm-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+**/*.blend1
+src/**/*.js
+**/*/sitemap.xml
