@@ -13,4 +13,5 @@ module.exports = {
         "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
     },
     moduleFileExtensions: ["ts", "tsx", "js", "json"],
+    snapshotSerializers: ["@emotion/jest/serializer"],
 };

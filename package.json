@@ -17,6 +17,7 @@
         "typecheck": "tsc"
     },
     "dependencies": {
+        "@emotion/jest": "^11.1.0",
         "@emotion/react": "^11.1.5",
         "@emotion/styled": "^11.1.5",
         "@testing-library/react": "^11.2.5",
